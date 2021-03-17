@@ -33,7 +33,7 @@ float SisIoTJJRSensorGas::getSensorV(){
 }
 
 void SisIoTJJRSensorGas::setSensorV(float adc){       //atribui se value nao for NaN
-  if(!isnan(adc)){ dados->_sensorV = (adc/1024*5.0); }  //calculo V
+  if(!isnan(adc)){ dados->_sensorV = adc*(5.0/1023); }  //calculo V
 }
 
 bool SisIoTJJRSensorGas::verificarVazamento(){
