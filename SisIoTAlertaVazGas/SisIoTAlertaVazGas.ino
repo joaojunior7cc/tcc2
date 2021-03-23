@@ -41,7 +41,7 @@ void loop() {
   //reset
   if (autom.getResetar()) { autom.setResetar(false); setup(); }
   tools.delay2(5000);
-  ESP.wdtFeed();//Alimenta o Watchdog.
+  ESP.wdtFeed();//Alimenta o Watchdog. 
 }
 
 //METODOS ***************************************************************************
